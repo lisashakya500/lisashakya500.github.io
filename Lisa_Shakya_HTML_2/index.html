@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kamana Sewa Bank - Job Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header,
+        footer {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 10px;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        .form-section {
+            background-color: lightgray;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1> Kamana Sewa Bank</h1>
+        <nav>
+            <a href="#application">Application Form</a>
+            <a href="#quote">Quote</a>
+            <a href="#media">Media</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="application" class="form-section">
+            <article>
+                <h2> Assistant Job Application</h2>
+
+                <!--Job Application Form Starts Here -->
+                <form action="/submit" method="POST" autocomplete="on">
+
+                    <label>Full name:
+                        <input type="text" name="fullname" placeholder="Lisa Shakya" required minlength="3"
+                            maxlength=" 50"> </label><br><br>
+                    <label>Email:
+                        <input type="text" name="email" placeholder="you@gmail.com" required
+                            pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">
+                    </label><br><br>
+                    <label>Password:
+                        <input type="password" name="password" required>
+                    </label><br><br>
+                    <label>Years of Experience:
+                        <input type="number" name="experience" min="0" max="10">
+                    </label><br><br>
+                    <label>Expected Salary Range:
+                        <input type="range" name="salary" min="800" max="3000" step="100">
+                    </label><br><br>
+                    <label>Job Preferences:</label><br>
+                    <input type="checkbox" name="preferences" value="fulltime"> Full-Time<br>
+                    <input type="checkbox" name="preferences" value="parttime"> Part-Time<br><br>
+
+                    <label>Job Type:</label><br>
+                    <input type="radio" name="jobtype" value="intern"> Internship<br>
+                    <input type="radio" name="jobtype" value="contract"> Contract<br><br>
+
+                    <label>Department:
+                        <select name="department">
+                            <option value="it">Information Technology</option>
+                            <option value="operation">Operation</option>
+                            <option value="hr">Human Resource</option>
+                            <option value="finance">Finance</option>
+                        </select>
+                    </label><br><br>
+
+                    <label>Branch Preference:
+                        <input list="branches" name="branch">
+                        <datalist id="branches">
+                            <option value="Lalitpur">
+                            <option value="Bhaktapur">
+                            <option value="Kathmandu">
+                        </datalist>
+                    </label><br><br>
+
+                    <label>Motivation letter:<br>
+                        <textarea name="coverletter" rows="5" cols="40"
+                            placeholder="Why would you lie to work with us?"></textarea>
+                    </label><br><br>
+
+                    <label>Referral Code(disabled):
+                        <input type="text" value="KSBBLREF123" disabled>
+                    </label><br><br>
+
+                    <label>Application ID (readonly):
+                        <input type="text" value="KSBBL2025" readonly>
+                    </label><br><br>
+
+                    <input type="submit" value="Send Application" aria-label="Submit Job Application">
+
+                </form>
+                <!--Job Application Form Ends Here-->
+            </article>
+        </section>
+        <br>
+
+        <aside>
+            <blockquote id="quote">
+                "The future belongs to those who believe in the beauty of their dreams."- Eleanor Roosevelt
+            </blockquote>
+        </aside>
+
+        <section id="media">
+            <article>
+                <h2>KSBBL Media</h2>
+
+                <!--Figure with Image and Caption-->
+                <figure>
+                    <img src="KSBBL logo.png" alt="KSBBL Logo" width="250">
+                    <figcaption>Official KSBBL Logo</figcaption>
+                </figure><br><br>
+
+                <!--Embed External Media -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2269866502784!2d85.32789277387464!3d27.710277123538365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190b6cfcaa5f%3A0xdfb3b74e28aa11d7!2sKamana%20Sewa%20Bikas%20Bank%20Limited%2CGyaneshwar%2CKathmandu%2FMain%20Branch!5e0!3m2!1saz!2sfi!4v1763140063734!5m2!1saz!2sfi"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </article>
+        </section>
+    </main>
+    <br>
+
+    <footer>
+        <p>
+            &copy; 2025 Kamana Sewa Bank. All rights reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

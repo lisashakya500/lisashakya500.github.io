@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Art Gallery - Gallery </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="main-tile" class="title">Art Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Cities & Landscapes</h2>
+        <div class="gallery">
+
+            <figure class="artwork relative">
+                <img src="city 1.jpg" alt="city1" class="art-img">
+                <figcaption>City 1 (relative positioning)</figcaption>
+            </figure>
+
+            <figure class="artwork absolute">
+                <img src="city 2.jpg" alt="city2" class="art-img">
+                <figcaption>City 2 (absolute positioning)</figcaption>
+            </figure>
+
+            <figure class="artwork sticky">
+                <img src="city 3.jpg" alt="city3" class="art-img">
+                <figcaption>City 3 (sticky positioning)</figcaption>
+            </figure>
+
+            <figure class="artwork static">
+                <img src="city 4.jpg" alt="city4" class="art-img">
+                <figcaption>City 4 (static positioning)</figcaption>
+            </figure>
+            <!-- iframe -->
+            <figure class="artwork iframe-box">
+
+                <iframe title="City 5" class="art-iframe" width="400" height="300" src='city5.jpg'>
+                </iframe>
+
+                <!-- <iframe src="city 5.jpg" title="City 5" class="art-iframe"></iframe> -->
+                <figcaption>City 5 (iframe-box)</figcaption>
+            </figure>
+            <!-- iframe -->
+
+        </div>
+        <div class="gallery-stack">
+            <div class="z-stack-inline">
+                <figure class="z-box z-n1">
+                    <img src="city 6.jpg" alt="City6" class="art-img">
+                    <figcaption>City 6 (z-n1)</figcaption>
+                </figure>
+                <figure class="z-box z-0">
+                    <img src="city 7.jpg" alt="City7" class="art-img">
+                    <figcaption>City 7 (z-0)</figcaption>
+                </figure>
+                <figure class="z-box z-1">
+                    <img src="city 8.jpg" alt="City8" class="art-img">
+                    <figcaption>City 8 (z-1)</figcaption>
+                </figure>
+                <figure class="z-box z-2">
+                    <img src="city 9.jpg" alt="City9" class="art-img">
+                    <figcaption>City 9 (z-2)</figcaption>
+                </figure>
+                <figure class="z-box z-3">
+                    <img src="city 10.jpg" alt="City10" class="art-img">
+                    <figcaption>City 10 (z-3)</figcaption>
+                </figure>
+            </div>
+
+            <figure class="artwork hidden-player">
+                <img src="city 11.jpg" alt="City11" class="art-img">
+                <figcaption>City 11</figcaption>
+            </figure>
+
+        </div>
+        <div class="gallery-out">
+            <div class="floating-box">
+                <p>Which one was your favorite? <br> <strong>They are all nice, I know.</strong></p>
+            </div>
+            <div class="clear-box">
+                <p>Emerging Favorites: Helsinki, Lisbon, Tallinn</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="fixed-footer">
+        <p>Art Gallery - Exploring the Beauty of Cities</p>
+    </footer>
+
+</body>
+
+</html>
